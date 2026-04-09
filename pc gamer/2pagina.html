@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2gamer.css">
+    <title>PC GAMER</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Honk&display=swap');
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        h1 {
+            font-family: "Honk", Arial, sans-serif
+        }
+
+        div > p {
+            display: none;
+        }
+
+       div:hover > p {
+            display: block;
+            color: brown;
+            width: 120px;
+            height: 10px;
+            font-size: 20px;
+        }
+
+        div {
+            font-size: 32px;
+        }
+
+        header {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .paginacao {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        }       
+
+        .paginacao a {
+        color: black;
+        padding: 8px 16px;
+        margin: 0 4px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .paginacao a:hover {
+        background-color: #0056b3;
+        }
+
+        .paginacao a.ativa {
+        background-color: #333;
+        pointer-events: none;
+        }
+
+        #numero {
+            color: white;
+        }
+
+        </style>
+        
+</head>
+
+<body>
+
+        <header>
+            <h1>PC GAMER</h1>
+        </header>
+
+        <form action="https://www.google.com/search" method="get" class="busca-site">
+            <input type="text" name="q" placeholder="Pesquisar no site..." required>
+            <input type="hidden" name="as_sitesearch" value="seu-dominio.com">
+            <button type="submit">🔎 Buscar</button>
+        </form>
+
+        <div class="opcoes">
+                <div><a href="../ph-tech.html">INICIO</a></div>
+                <div><a href="../assistencia tecnica/assistencia-técnica.html">ASSISTÊNCIA TÉCNICA</a></div>
+                <div><a href="../filmes/categoria.html">FILMES/ANIMES/DESENHOS</a></div>
+                <div><a href="../pc fraco/pc-fraco.html">PC FRACO</a></div>
+                <div><a href="../manutencao.html">PS2</a></div>
+                <div><a href="../software/software.html">SOFTWARE</a></div>
+            </div>
+
+    <main>
+        <div class="caixas">
+        <a href="cyberpunk2077.html" target="_blank">
+                <div class="caixa">
+                    Cyberpunk 2077 <br>
+                    <img src="imagens/imagens dos jogos/cyberpunk 2077.png" alt="Cyberpunk 2077">
+                </div>
+        </a>
+        <a href="darkside3.html" target="_blank">
+                <div class="caixa">
+                    Darksiders III <br>
+                    <img src="imagens/imagens dos jogos/darksiders 3.png" alt="Darksiders III">
+                </div>
+        </a>
+        <a href="darksouls2.html" target="_blank">
+                <div class="caixa">
+                    Dark Souls II Scholar of the First Sin <br>
+                    <img src="imagens/imagens dos jogos/dark souls 2.png" alt="Dark Souls II Scholar of the First Sin">
+                </div>
+        </a>
+        <a href="darksouls3.html" target="_blank">
+                <div class="caixa">
+                    Dark Souls III <br>
+                    <img src="imagens/imagens dos jogos/dark souls 3.png" alt="Dark Souls III">
+                </div>
+        </a>
+        <a href="darksoulsremaster.html" target="_blank">
+                <div class="caixa">
+                    Dark Souls Remastered <br>
+                    <img src="imagens/imagens dos jogos/darksouls remaster.png" alt="Dark Souls Remastered">
+                </div>
+        </a>
+        <a href="daysgone.html" target="_blank">
+                <div class="caixa">
+                    Days Gone <br>
+                    <img src="imagens/imagens dos jogos/days gone remaster.png" alt="Days Gone">
+                </div>
+        </a>
+        <a href="deadisland1.html" target="_blank">
+                <div class="caixa">
+                    Dead Island 1 <br>
+                    <img src="imagens/imagens dos jogos/dead island 1.png" alt="Dead Island 2">
+                </div>
+        </a>
+        <a href="deadisland2.html" target="_blank">
+                <div class="caixa">
+                    Dead Island 2 <br>
+                    <img src="imagens/imagens dos jogos/dead island 2.jpg" alt="Dead Island 1">
+                </div>
+        </a>
+        
+        <a href="devilmaycry5.html" target="_blank">
+                <div class="caixa">
+                   Devil May Cry 5 <br>
+                    <img src="imagens/imagens dos jogos/devil may cry 5.jpg" alt="Devil May Cry 5">
+                </div>
+        </a>
+        <a href="dragonball.html" target="_blank">
+                <div class="caixa">
+                    Dragon Ball Sparking! ZERO <br>
+                    <img src="imagens/imagens dos jogos/dragon ball sparking.webp" alt="Dragon Ball Sparking! ZERO">
+                </div>
+        </a>
+        <a href="elderring.html" target="_blank">
+                <div class="caixa">
+                    ELDEN RING <br>
+                    <img src="imagens/imagens dos jogos/elden ring.jpg" alt="ELDEN RING">
+                </div>
+        </a>
+        <a href="farcry5.html" target="_blank">
+                <div class="caixa">
+                    Far Cry 5 <br>
+                    <img src="imagens/imagens dos jogos/far cry 5.jpg" alt="Far Cry 5">
+                </div>
+        </a>
+        </div>
+        <div class="paginacao">
+            <a href="pc-gamer.html">1</a>
+            <a href="3pagina.html">3</a>
+            <a href="#">...</a>
+        </div>
+    </main>
+    <p id="numero">Página 2</p>
+<footer> &copy; Site Desenvolvido por: <span>Pedro Henrique.</span> Todos os Direitos Reservados</footer>
+</body>
+</html>
