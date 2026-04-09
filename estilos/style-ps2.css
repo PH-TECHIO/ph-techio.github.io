@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Honk&display=swap');
+
+.busca-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.busca-site input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+}
+
+.busca-site input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.busca-site button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1a1a1a, #333);
+  color: #fff;
+  font-weight: bold;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.busca-site button:hover {
+  background: linear-gradient(145deg, #333, #555);
+  transform: scale(1.05);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+header {
+    margin: 10px;
+    padding: 0px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    font-family: "Honk", Arial, sans-serif;
+    margin: -10px -10px 0px -10px; 
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.opcoes div {
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 190px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.opcoes div:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.opcoes a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 1rem;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    color: brown;
+    width: 120px;
+    height: 10px;
+    font-size: 20px;
+}
+
+div {
+    font-size: 32px;
+}
+
+    
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+}
+
+footer span {
+    font-weight: bold;
+} 
