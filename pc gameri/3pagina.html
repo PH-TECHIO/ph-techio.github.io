@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2gamer.css">
+    <title>PC GAMER</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Honk&display=swap');
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        h1 {
+            font-family: "Honk", Arial, sans-serif
+        }
+
+        div > p {
+            display: none;
+        }
+
+       div:hover > p {
+            display: block;
+            color: brown;
+            width: 120px;
+            height: 10px;
+            font-size: 20px;
+        }
+
+        div {
+            font-size: 32px;
+        }
+
+        header {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .paginacao {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        }       
+
+        .paginacao a {
+        color: black;
+        padding: 8px 16px;
+        margin: 0 4px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .paginacao a:hover {
+        background-color: #0056b3;
+        }
+
+        .paginacao a.ativa {
+        background-color: #333;
+        pointer-events: none;
+        }
+        
+        #numero {
+            color: white;
+        }
+
+        </style>
+        
+</head>
+
+<body>
+
+        <header>
+            <h1>PC GAMER</h1>
+        </header>
+
+        <form action="https://www.google.com/search" method="get" class="busca-site">
+            <input type="text" name="q" placeholder="Pesquisar no site..." required>
+            <input type="hidden" name="as_sitesearch" value="seu-dominio.com">
+            <button type="submit">🔎 Buscar</button>
+        </form>
+
+        <div class="opcoes">
+                <div><a href="../ph-tech.html">INICIO</a></div>
+                <div><a href="../assistencia tecnica/assistencia-técnica.html">ASSISTÊNCIA TÉCNICA</a></div>
+                <div><a href="../filmes/categoria.html">FILMES/ANIMES/DESENHOS</a></div>
+                <div><a href="../pc fraco/pc-fraco.html">PC FRACO</a></div>
+                <div><a href="../manutencao.html">PS2</a></div>
+                <div><a href="../software/software.html">SOFTWARE</a></div>
+            </div>
+
+    <main>
+        <div class="caixas">
+        <a href="farcry6.html" target="_blank">
+                <div class="caixa">
+                    Far Cry 6 <br>
+                    <img src="imagens/imagens dos jogos/far cry 6.jpg" alt="Far Cry 6">
+                </div>
+        </a>
+        <a href="farcryapex.html" target="_blank">
+                <div class="caixa">
+                    Far Cry Primal <br>
+                    <img src="imagens/imagens dos jogos/far cry primal.webp" alt="Far Cry Primal">
+                </div>
+        </a>
+        <a href="farmingsimulator.html" target="_blank">
+                <div class="caixa">
+                    Farming Simulator 25 <br>
+                    <img src="imagens/imagens dos jogos/farming simulator 25.png" alt="Farming Simulator 25">
+                </div>
+        </a>
+        <a href="fifa15.html" target="_blank">
+                <div class="caixa">
+                   Fifa 2015 <br>
+                    <img src="imagens/imagens dos jogos/fifa 15.png" alt="Fifa 2015">
+                </div>
+        </a>
+        <a href="fifa16.html" target="_blank">
+                <div class="caixa">
+                   Fifa 2016 <br>
+                    <img src="imagens/imagens dos jogos/fifa 16.jpg" alt="Fifa 2016">
+                </div>
+        </a>
+        <a href="godofwar.html" target="_blank">
+                <div class="caixa">
+                    God of War  <br>
+                    <img src="imagens/imagens dos jogos/god of war.png" alt="God of War">
+                </div>
+        </a>
+        <a href="godofwarrag.html" target="_blank">
+                <div class="caixa">
+                    God of War Ragnarok  <br>
+                    <img src="imagens/imagens dos jogos/god of war ragnarok.jpg" alt="God of War Ragnarok">
+                </div>
+        </a>
+        <a href="gta4.html" target="_blank">
+                <div class="caixa">
+                   GTA IV <br>
+                    <img src="imagens/imagens dos jogos/gta 4.png" alt="GTA IV">
+                </div>
+        </a>
+        <a href="gta5.html" target="_blank">
+                <div class="caixa">
+                   GTA V <br>
+                    <img src="imagens/imagens dos jogos/gta 5.png" alt="GTA V">
+                </div>
+        </a>
+        <a href="hogwarslegacy.html" target="_blank">
+                <div class="caixa">
+                    Hogwarts Legacy  <br>
+                    <img src="imagens/imagens dos jogos/hogwart legacy.jpg" alt="Hogwarts Legacy">
+                </div>
+        </a>
+        <a href="horizonforbiddenwest.html" target="_blank">
+                <div class="caixa">
+                    Horizon Forbidden West  <br>
+                    <img src="imagens/imagens dos jogos/Horizon_Forbidden_West.jpg" alt="Horizon Forbidden West">
+                </div>
+        </a>
+        <a href="houseflipper.html" target="_blank">
+                <div class="caixa">
+                    House Flipper 1  <br>
+                    <img src="imagens/imagens dos jogos/house flipper 1.jpg" alt="House Flipper 1">
+                </div>
+        </a>
+        </div>
+        <div class="paginacao">
+            <a href="2pagina.html">2</a>
+            <a href="4pagina.html">4</a>
+            <a href="#">...</a>
+        </div>
+    </main>
+<p id="numero">Página 3</p>
+<footer> &copy; Site Desenvolvido por: <span>Pedro Henrique.</span> Todos os Direitos Reservados</footer>
+</body>
+</html>

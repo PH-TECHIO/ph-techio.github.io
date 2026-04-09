@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+main {
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px rgba(60, 100, 136, 0.692);
+    max-width: 1300px;
+    max-height: 1450px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.busca-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.busca-site input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+}
+
+.busca-site input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.busca-site button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1a1a1a, #333);
+  color: #fff;
+  font-weight: bold;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.busca-site button:hover {
+  background: linear-gradient(145deg, #333, #555);
+  transform: scale(1.05);
+}
+
+body {
+    background-image: url(../imagens/plano\ 2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+p {
+    color: white;
+    text-align: justify;
+}
+ul{
+    text-align: center;
+}
+li{
+    color: white;
+    font-family: "VT323", monospace, arial, sans-serif;
+    text-align: center;
+    list-style-position: inside;
+}
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    font-size: 40px;
+    padding: 20px;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+img {
+    align-items: center;
+    width: 180px;
+    height: 180px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(34, 182, 71);
+}
+
+div.media {
+    margin: -282px -388px 0px 10px;
+    padding: 0px;
+    max-width: 150%;
+    max-height: 150%;
+}
+
+div.tera {
+    margin-right: 329px;
+    padding: 0px;
+}
+
+div.caixa > img {
+    width: 150px;
+    height: 150px;
+}
+
+div.video {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+div.video iframe {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 360px;
+}
