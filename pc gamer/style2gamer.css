@@ -118,7 +118,6 @@ h4 {
     transition: 0.3s;
     color: white;
     text-align: center;
-    font-size: 14px;
 }
 
 /* IMAGEM */
@@ -174,7 +173,6 @@ a:hover {
     color: #fff;
     font-weight: bold;
     font-family: "DM Serif Display", sans-serif;
-    font-seize: 14px;
 }
 
 /* PAGINAÇÃO */
