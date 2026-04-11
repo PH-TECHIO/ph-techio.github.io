@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- CATEGORIAS -->
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20gamer/pc-gamer.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20fraco/pc-fraco.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/software/software.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/filmes/categoria.html</loc>
+  </url>
+
+  <!-- JOGOS (PC GAMER) -->
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20gamer/assassinsmirage.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20gamer/crysisremaster.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20gamer/gta5.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20gamer/assassinsvalhalla.html</loc>
+  </url>
+
+  <!-- PC FRACO -->
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20fraco/codwar4.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/pc%20fraco/fifa14.html</loc>
+  </url>
+
+  <!-- SOFTWARE -->
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/software/designgrafico.html</loc>
+  </url>
+
+  <!-- FILMES / ANIMES -->
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/filmes/pafilmes/harrypottereapedra.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ph-techio.github.io/PH-TECH/filmes/paanimes/attackontitan.html</loc>
+  </url>
+
+</urlset>
