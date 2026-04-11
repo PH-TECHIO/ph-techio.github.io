@@ -60,10 +60,10 @@ body {
 main {
     background-color: rgba(255, 255, 255, 0.247);
     box-shadow: 3px 3px 15px rgba(60, 100, 136, 0.692);
-    width: 1700px;
-    height: auto;
-    padding: 10px;
-    margin: auto;
+    max-width: 1200px;
+    width: 95%;
+    margin: 35px auto;
+    padding: 15px;
     border-radius: 5px;
     margin-top: 35px;
 }
