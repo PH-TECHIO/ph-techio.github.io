@@ -39,29 +39,44 @@
             padding: 10px;
         }
 
+        /* ========================= */
+        /* 🔥 PAGINAÇÃO BONITA */
+        /* ========================= */
+
         .paginacao {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        }       
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 10px;
+        }
 
         .paginacao a {
-        color: white;
-        padding: 8px 16px;
-        margin: 0 4px;
-        text-decoration: none;
-        font-size: 17px;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+            background-color: #222;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
         }
 
         .paginacao a:hover {
-        background-color: #0056b3;
+            background-color: #444;
+            transform: translateY(-3px);
         }
 
         .paginacao a.ativa {
-        background-color: #333;
-        pointer-events: none;
+            background-color: #0f9d58;
+            pointer-events: none;
         }
 
+        .paginacao a[href="#"]:not(.ativa) {
+            background-color: transparent;
+            box-shadow: none;
+            pointer-events: none;
+        }
         #numero {
             color: white;
         }
