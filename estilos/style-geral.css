@@ -297,66 +297,163 @@ footer span {
 }
 
 /* ========================= */
-/* 🔐 LOGIN (ADICIONADO) */
+/* 🔥 ESTILO NETFLIX (ADICIONADO) */
 /* ========================= */
 
-button[onclick="abrirLogin()"] {
+.top-bar {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
     z-index: 999;
+}
 
-    background-color: #e50914;
-    color: #fff;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 5px;
-
+#usuarioLogado {
+    color: white;
     font-weight: bold;
+}
+
+.botoes-topo button {
+    background: #e50914;
+    border: none;
+    color: white;
+    padding: 8px 12px;
     cursor: pointer;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
-button[onclick="abrirLogin()"]:hover {
-    background-color: #f6121d;
+.botoes-topo button:hover {
+    background: #b00610;
 }
 
-#loginModal {
-    backdrop-filter: blur(8px);
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
 }
 
-#loginModal > div {
-    background: rgba(0, 0, 0, 0.9);
+.modal-content {
+    background: #141414;
+    margin: 10% auto;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.9);
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-#loginModal input {
-    background: #333;
-    border: none;
-    color: #fff;
-    padding: 12px;
-    border-radius: 4px;
-    margin: 8px 0;
+.modal-content input {
     width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
-#loginModal button {
-    background-color: #e50914;
-    color: #fff;
-    border: none;
-    padding: 12px;
+.modal-content button {
+    width: 100%;
     margin-top: 10px;
-    width: 100%;
-    border-radius: 4px;
+    padding: 10px;
+    background: #e50914;
+    border: none;
+    color: white;
     cursor: pointer;
 }
 
-#loginModal button:hover {
-    background-color: #f6121d;
+.modal-content button:hover {
+    background: #b00610;
 }
 
-#msg {
-    color: #e50914;
+#btnLogin {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#loginModal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.login-box {
+  background: rgba(0,0,0,0.85);
+  padding: 40px;
+  width: 350px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-login {
+  background: #e50914;
+  color: white;
+}
+
+.btn-google {
+  background: #fff;
+  color: black;
+}
+
+.btn-criar {
+  background: transparent;
+  color: #aaa;
+}
+
+.fechar {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
 }
