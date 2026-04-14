@@ -266,11 +266,16 @@ window.login = function() {
 }
 
 window.criarConta = function() {
-  createUserWithEmailAndPassword(auth, email.value, senha.value)
-    .then(() => alert("Conta criada!"))
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+
+  createUserWithEmailAndPassword(auth, email, senha)
+    .then(() => {
+      alert("Conta criada!");
+    })
     .catch(error => {
-  document.getElementById("msg").innerText = "Digite o email e a senha depois clique em Criar conta";
-});
+      document.getElementById("msg").innerText = "Digite o email e a senha depois clique em Criar conta";
+    });
 }
 
 window.loginGoogle = function() {
