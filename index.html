@@ -6,7 +6,7 @@
 
   <!-- 🔥 VERIFICAÇÃO DO GOOGLE (LUGAR IDEAL) -->
   <meta name="google-site-verification" content="6OFHxOQai-3mSjfz6OmNLfA3S3yjfcqR5cW9vscOJFc" />
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZS1QG5YHY"></script>
   <script>
@@ -20,7 +20,7 @@
   <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="estilos/style-geral.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
+  <meta name="description" content="Download de jogos para PC fraco e PC gamer grátis, com links diretos e seguros. PH TECH.">
   <title>PH TECH</title>
 
   <style>
@@ -121,6 +121,30 @@
 </head>
 
 <body>
+
+  <!-- 🔐 BOTÃO LOGIN (NÃO REMOVE NADA DO SEU SITE) -->
+<button onclick="abrirLogin()" style="position:fixed; top:20px; right:20px; z-index:999;">Login</button>
+
+<!-- 🔐 MODAL LOGIN -->
+<div id="loginModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000000cc; justify-content:center; align-items:center; z-index:999;">
+  <div style="background:#111; padding:20px; border-radius:10px; width:300px; text-align:center;">
+    
+    <span onclick="fecharLogin()" style="float:right; cursor:pointer; color:#fff;">✖</span>
+    
+    <h2 style="color:white;">Login</h2>
+
+    <input type="email" id="email" placeholder="Email" style="width:90%; margin:5px; padding:10px;"><br>
+    <input type="password" id="senha" placeholder="Senha" style="width:90%; margin:5px; padding:10px;"><br>
+
+    <button onclick="login()">Entrar</button>
+    <button onclick="criarConta()">Criar Conta</button>
+    <button onclick="loginGoogle()">Entrar com Google</button>
+
+    <p id="msg" style="color:red;"></p>
+
+  </div>
+</div>
+
   <header>
     <h1>SEJA BEM VINDO A PH TECH</h1>
     <hr>
@@ -196,5 +220,83 @@
     </main> 
 
   <footer> &copy; Site Desenvolvido por: <span>Pedro Henrique.</span> Todos os Direitos Reservados</footer>
+
+    <!-- 🔥 FIREBASE + LOGIN (ADICIONADO NO FINAL) -->
+
+    <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
+import { 
+  getAuth, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup
+} from "https://www.gstatic.com/firebasejs/12.12.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCzze0ZMrbDHyx43HM69JftmiIwQ-cVRyM",
+  authDomain: "phtech-e03b4.firebaseapp.com",
+  projectId: "phtech-e03b4",
+  storageBucket: "phtech-e03b4.firebasestorage.app",
+  messagingSenderId: "888838937863",
+  appId: "1:888838937863:web:259e90444f9f6e41ed39a2"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// LOGIN NORMAL
+window.login = function() {
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+
+  signInWithEmailAndPassword(auth, email, senha)
+    .then(() => {
+      alert("Login realizado!");
+      fecharLogin();
+    })
+    .catch(error => {
+      document.getElementById("msg").innerText = error.message;
+    });
+}
+
+// CRIAR CONTA
+window.criarConta = function() {
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+
+  createUserWithEmailAndPassword(auth, email, senha)
+    .then(() => {
+      alert("Conta criada!");
+    })
+    .catch(error => {
+      document.getElementById("msg").innerText = error.message;
+    });
+}
+
+// 🔥 LOGIN COM GOOGLE
+window.loginGoogle = function() {
+  const provider = new GoogleAuthProvider();
+
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      alert("Logado com Google: " + result.user.displayName);
+      fecharLogin();
+    })
+    .catch((error) => {
+      document.getElementById("msg").innerText = error.message;
+    });
+}
+
+// ABRIR/FECHAR
+window.abrirLogin = function() {
+  document.getElementById("loginModal").style.display = "flex";
+}
+
+window.fecharLogin = function() {
+  document.getElementById("loginModal").style.display = "none";
+}
+</script>
+
 </body>
 </html>
