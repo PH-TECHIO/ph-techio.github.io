@@ -163,7 +163,7 @@ a:hover {
     padding: 6px 10px;
     border-radius: 8px;
     max-width: 250px;
-    max-height: 46px;
+    max-height: none;
     text-align: center;
     transition: 0.3s;
 }
