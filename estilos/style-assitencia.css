@@ -70,12 +70,12 @@ div:hover > p {
 }
 
 div {
-    font-size: 32px;
+    font-size: 15px;
 }
 
 div > h3 {
     text-align: center;
-    margin: auto;
+    margin-bottom: 10px;
     color: white;
     text-decoration: none;
 }
@@ -136,23 +136,22 @@ footer {
     border-radius: 10px;
 }
 
-/* ========================= */
-/* 📱 RESPONSIVO */
-/* ========================= */
-
-@media (max-width: 1024px) {
-    .caixas {
-        grid-template-columns: repeat(2, 1fr);
-    }
+footer span {
+    font-weight: bold;
 }
 
+/* ===== RESPONSIVIDADE PARA CELULAR ===== */
 @media (max-width: 768px) {
 
-    h1 {
+   h1 {
         font-size: 1.5rem;
     }
 
-    .busca-site {
+  p {
+    font-size: 16px;
+  }
+
+   .busca-site {
         flex-direction: column;
     }
 
@@ -164,7 +163,17 @@ footer {
         width: 50%;
     }
 
-    .opcoes {
+  div {
+    font-size: 24px;
+  }
+
+  div:hover > p {
+    font-size: 16px;
+    width: auto;
+    height: auto;
+  }
+
+  .opcoes {
         flex-direction: column;
         align-items: center;
     }
@@ -173,29 +182,12 @@ footer {
         width: 90%;
     }
 
-    .caixas {
-        grid-template-columns: 1fr;
-    }
+  .opcoes a {
+    font-size: 0.9rem;
+  }
 
-    .caixa {
-        max-width: 90%;
-        height: 380px;
-    }
-
-    .caixa img {
-        height: 75%;
-    }
-
-    .titulo {
-        font-size: 18px;
-    }
-
-    li {
-        text-align: center;
-        list-style: none;
-    }
-}
-
-footer span {
-    font-weight: bold;
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
