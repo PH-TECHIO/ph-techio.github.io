@@ -60,11 +60,11 @@ body {
     transform: scale(1.05);
 }
 
-/* MAIN (CORRIGIDO) */
+/* MAIN */
 main {
     background-color: rgba(255, 255, 255, 0.247);
     box-shadow: 3px 3px 15px rgba(60, 100, 136, 0.692);
-    max-width: 1200px;
+    max-width: 1350px;
     width: 95%;
     margin: 35px auto;
     padding: 20px;
@@ -89,7 +89,7 @@ h4 {
 }
 
 /* ========================= */
-/* 📦 CAIXAS (AGORA GRID) */
+/* 📦 CAIXAS */
 /* ========================= */
 
 .caixas {
@@ -120,11 +120,11 @@ h4 {
     text-align: center;
 }
 
-/* IMAGEM */
+/* IMAGEM (MAIOR AGORA 🔥) */
 .caixa img {
     width: 100%;
-    height: 75%;
-    object-fit: cover;
+    height: 88%; /* aumentei aqui */
+    object-fit: scale-down;
     border-radius: 12px;
 }
 
@@ -133,7 +133,7 @@ h4 {
     transform: translateY(-8px) scale(1.02);
 }
 
-/* LINKS (CORRIGIDO) */
+/* LINKS */
 a {
     color: white;
     text-decoration: none;
@@ -145,34 +145,38 @@ a:hover {
     text-decoration: underline;
 }
 
-/* MENU */
+/* ========================= */
+/* 🔧 OPÇÕES */
+/* ========================= */
+
 .opcoes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin: 30px auto;
-    padding: 10px;
+    gap: 6px;
+    margin: 20px auto;
+    padding: 5px;
 }
 
 .opcoes div {
     background-color: #222;
-    padding: 12px;
-    border-radius: 10px;
-    width: 200px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    width: 140px;
     text-align: center;
     transition: 0.3s;
 }
 
 .opcoes div:hover {
     background-color: #333;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .opcoes a {
     color: #fff;
     font-weight: bold;
     font-family: "DM Serif Display", sans-serif;
+    font-size: 0.8rem;
 }
 
 /* PAGINAÇÃO */
@@ -209,7 +213,7 @@ footer {
 }
 
 /* ========================= */
-/* 📱 RESPONSIVO REAL */
+/* 📱 RESPONSIVO */
 /* ========================= */
 
 @media (max-width: 1024px) {
@@ -255,6 +259,7 @@ footer {
     }
 
     .caixa img {
-        height: 70%;
+        height: 80%; /* também maior no mobile */
+        object-fit: scale-down;
     }
 }
