@@ -162,7 +162,8 @@ a:hover {
     background-color: #222;
     padding: 6px 10px;
     border-radius: 8px;
-    width: 140px;
+    max-width: 250px;
+    max-height: 46px;
     text-align: center;
     transition: 0.3s;
 }
