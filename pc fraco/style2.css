@@ -168,31 +168,33 @@ div.pix {
     font-size: 16px;
     color: white;
 }
+/* ========================= */
+/* 🔘 MENU OPÇÕES */
+/* ========================= */
 
-/* ===== OPÇÕES ===== */
 .opcoes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     margin: 30px auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .opcoes div {
     background-color: #222;
-    padding: 10px 20px;
-    border-radius: 10px;
-    max-width: 190px;
-    height: 80px;
+    padding: 10px;
+    border-radius: 12px;
+
+    width: 220px;
+    min-height: 70px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s, background-color 0.2s;
+    transition: 0.3s;
 }
 
 .opcoes div:hover {
@@ -205,7 +207,9 @@ div.pix {
     color: #fff;
     font-weight: bold;
     font-family: "DM Serif Display", sans-serif;
-    font-size: 1rem;
+
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 /* ===== LINKS ===== */
@@ -247,46 +251,55 @@ footer {
     border-radius: 10px;
 }
 
-/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
 
-  h1 {
-    font-size: 32px;
-  }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-  p {
-    font-size: 14px;
-  }
+    .busca-site {
+        flex-direction: column;
+    }
 
-  .busca-site {
-    flex-direction: column;
-    width: 95%;
-  }
+    .busca-site input {
+        width: 90%;
+    }
 
-  .busca-site input,
-  .busca-site button {
-    width: 100%;
-  }
+    .busca-site button {
+        width: 50%;
+    }
 
-  div.caixas {
-    flex-direction: column;
-    align-items: center;
-  }
+    .opcoes {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  div.caixa {
-    width: 90%;
-  }
+    .opcoes div {
+        width: 90%;
+    }
 
-  .opcoes {
-    flex-direction: column;
-    align-items: center;
-  }
+    .caixas {
+        grid-template-columns: 1fr;
+    }
 
-  .opcoes div {
-    width: 90%;
-    height: auto;
-  }
+    .caixa {
+        max-width: 90%;
+        height: 380px;
+    }
 
+    .caixa img {
+        height: 75%;
+    }
+
+    .titulo {
+        font-size: 18px;
+    }
+
+    li {
+        text-align: center;
+        list-style: none;
+    }
+}
   div.bttopo {
     width: 60px;
     height: 60px;
@@ -301,4 +314,3 @@ footer {
   footer {
     font-size: 12px;
   }
-}
