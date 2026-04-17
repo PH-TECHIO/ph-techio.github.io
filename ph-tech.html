@@ -46,7 +46,6 @@
       font-size: 1rem;
     }
 
-    /* === CARROSSEL INFINITO SUAVE === */
     .carousel-container {
       width: 90%;
       max-width: 1100px;
@@ -85,12 +84,8 @@
     }
 
     @keyframes scrollInfinito {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     @media (max-width: 768px) {
@@ -115,108 +110,91 @@
   </style>
 </head>
 
-
-
 <body>
 
 <!-- BOTÃO LOGIN -->
 <button id="btnLogin" onclick="abrirLogin()">Entrar</button>
 
-  <div id="modalLogin" class="modal">
-  <div class="modal-content">
-    <h2>Entrar ou Criar Conta</h2>
+<!-- MODAL LOGIN -->
+<div id="loginModal">
+  <div class="login-box">
+
+    <span class="fechar" onclick="fecharLogin()">✖</span>
+
+    <h2>Entrar</h2>
 
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="senha" placeholder="Senha">
 
-    <button onclick="login()">Entrar</button>
-    <button onclick="criarConta()">Criar Conta</button>
-    <button onclick="loginGoogle()">Entrar com Google</button>
+    <button class="btn-login" onclick="login()">Entrar</button>
+    <button class="btn-google" onclick="loginGoogle()">Entrar com Google</button>
+    <button class="btn-criar" onclick="criarConta()">Criar conta</button>
 
-    <button onclick="fecharLogin()">Fechar</button>
-  </div>
-</div>
-  
     <p id="msg" style="color:red;"></p>
 
   </div>
 </div>
-    <h1>SEJA BEM VINDO A PH TECH</h1>
-    <hr>
-  </header>
 
-  <form action="https://www.google.com/search" method="get" class="busca-site">
-    <input type="text" name="q" placeholder="Pesquisar no site..." required>
-    <input type="hidden" name="as_sitesearch" value="https://ph-techio.github.io/">
-    <button type="submit">🔎 Buscar</button>
-  </form>
+<h1>SEJA BEM VINDO A PH TECH</h1>
+<hr>
 
-  <div class="opcoes">
-    <div><a href="assistencia tecnica/assistencia-técnica.html">ASSISTÊNCIA TÉCNICA</a></div>
-    <div><a href="filmes/categoria.html">FILMES/ANIMES/DESENHOS</a></div>
-    <div><a href="pc gamer/pc-gamer.html">PC GAMER</a></div>
-    <div><a href="pc fraco/pc-fraco.html">PC FRACO</a></div>
-    <div><a href="manutencao.html">PS2</a></div>
-    <div><a href="software/software.html">SOFTWARE</a></div>
+<form action="https://www.google.com/search" method="get" class="busca-site">
+  <input type="text" name="q" placeholder="Pesquisar no site..." required>
+  <input type="hidden" name="as_sitesearch" value="https://ph-techio.github.io/">
+  <button type="submit">🔎 Buscar</button>
+</form>
+
+<div class="opcoes">
+  <div><a href="assistencia tecnica/assistencia-técnica.html">ASSISTÊNCIA TÉCNICA</a></div>
+  <div><a href="filmes/categoria.html">FILMES/ANIMES/DESENHOS</a></div>
+  <div><a href="pc gamer/pc-gamer.html">PC GAMER</a></div>
+  <div><a href="pc fraco/pc-fraco.html">PC FRACO</a></div>
+  <div><a href="manutencao.html">PS2</a></div>
+  <div><a href="software/software.html">SOFTWARE</a></div>
+</div>
+
+<div class="carousel-container">
+  <div class="slides">
+    <div class="slide"><a href="pc gamer/cyberpunk2077.html"><img src="imagens/jogo destaque.png"></a></div>
+    <div class="slide"><a href="pc gamer/thelastofus2.html"><img src="imagens/jogo destaque 2.png"></a></div>
+    <div class="slide"><a href="pc fraco/codwar4.html"><img src="imagens/jogo destaque 3.jpg"></a></div>
+    <div class="slide"><a href="software/designgrafico.html"><img src="software/imagens/logo design grafico/coreldraw suites.png"></a></div>
+    <div class="slide"><a href="filmes/pafilmes/harrypottereapedra.html"><img src="filmes/pafilmes/imagens-filmes/harry-potter-e-a-pedra.jpg"></a></div>
+    <div class="slide"><a href="filmes/paanimes/attackontitan.html"><img src="filmes/paanimes/imagens-animes/attack-on-titan.jpg"></a></div>
+    <div class="slide"><a href="pc gamer/gta5.html"><img src="imagens/jogo destaque 4.jpg"></a></div>
+
+    <div class="slide"><a href="pc gamer/cyberpunk2077.html"><img src="imagens/jogo destaque.png"></a></div>
+    <div class="slide"><a href="pc gamer/thelastofus2.html"><img src="imagens/jogo destaque 2.png"></a></div>
+    <div class="slide"><a href="pc fraco/codwar4.html"><img src="imagens/jogo destaque 3.jpg"></a></div>
+    <div class="slide"><a href="software/designgrafico.html"><img src="software/imagens/logo design grafico/coreldraw suites.png"></a></div>
+    <div class="slide"><a href="filmes/pafilmes/harrypottereapedra.html"><img src="filmes/pafilmes/imagens-filmes/harry-potter-e-a-pedra.jpg"></a></div>
+    <div class="slide"><a href="filmes/paanimes/attackontitan.html"><img src="filmes/paanimes/imagens-animes/attack-on-titan.jpg"></a></div>
+    <div class="slide"><a href="pc gamer/gta5.html"><img src="imagens/jogo destaque 4.jpg"></a></div>
   </div>
+</div>
 
-  <!-- 🎬 CARROSSEL INFINITO -->
-  <div class="carousel-container">
-    <div class="slides">
-      <!-- Primeira sequência -->
-      <div class="slide"><a href="pc gamer/cyberpunk2077.html"><img src="imagens/jogo destaque.png" alt="CyberPunk 2077"></a></div>
-      <div class="slide"><a href="pc gamer/thelastofus2.html"><img src="imagens/jogo destaque 2.png" alt="The Last of Us II"></a></div>
-      <div class="slide"><a href="pc fraco/codwar4.html"><img src="imagens/jogo destaque 3.jpg" alt="Call of Duty 4"></a></div>
-      <div class="slide"><a href="software/designgrafico.html"><img src="software/imagens/logo design grafico/coreldraw suites.png" alt="CorelDraw"></a></div>
-      <div class="slide"><a href="filmes/pafilmes/harrypottereapedra.html"><img src="filmes/pafilmes/imagens-filmes/harry-potter-e-a-pedra.jpg" alt="Harry Potter e a Pedra Filosofal"></a></div>
-      <div class="slide"><a href="filmes/paanimes/attackontitan.html"><img src="filmes/paanimes/imagens-animes/attack-on-titan.jpg" alt="Attack on Titan"></a></div>
-      <div class="slide"><a href="pc gamer/gta5.html"><img src="imagens/jogo destaque 4.jpg" alt="GTA V"></a></div>
+<main> 
+  <div class="caixas"> 
+    <a href="pc gamer/assassinsmirage.html" target="_blank"> 
+      <div class="caixa"><div class="titulo"> Assassin's Creed Mirage</div><br><img src="pc gamer/imagens/imagens dos jogos/assassins creed mirage.png"></div> 
+    </a> 
 
-      <!-- Segunda sequência duplicada para loop perfeito -->
-      <div class="slide"><a href="pc gamer/cyberpunk2077.html"><img src="imagens/jogo destaque.png" alt="CyberPunk 2077"></a></div>
-      <div class="slide"><a href="pc gamer/thelastofus2.html"><img src="imagens/jogo destaque 2.png" alt="The Last of Us II"></a></div>
-      <div class="slide"><a href="pc fraco/codwar4.html"><img src="imagens/jogo destaque 3.jpg" alt="Call of Duty 4"></a></div>
-      <div class="slide"><a href="software/designgrafico.html"><img src="software/imagens/logo design grafico/coreldraw suites.png" alt="CorelDraw"></a></div>
-      <div class="slide"><a href="filmes/pafilmes/harrypottereapedra.html"><img src="filmes/pafilmes/imagens-filmes/harry-potter-e-a-pedra.jpg" alt="Harry Potter e a Pedra Filosofal"></a></div>
-      <div class="slide"><a href="filmes/paanimes/attackontitan.html"><img src="filmes/paanimes/imagens-animes/attack-on-titan.jpg" alt="Attack on Titan"></a></div>
-      <div class="slide"><a href="pc gamer/gta5.html"><img src="imagens/jogo destaque 4.jpg" alt="GTA V"></a></div>
-    </div>
-  </div>
+    <a href="pc gamer/crysisremaster.html" target="_blank">
+      <div class="caixa"><div class="titulo">Crysis Remastered</div><br><img src="pc gamer/imagens/imagens dos jogos/crysis remaster.jpg"></div>
+    </a> 
 
-  <main> 
-    <div class="caixas"> 
-        <a href="pc gamer/assassinsmirage.html" target="_blank"> 
-            <div class="caixa"><div class="titulo"> Assassin's Creed Mirage</div> <br> <img src="pc gamer/imagens/imagens dos jogos/assassins creed mirage.png" alt="Assassin's Creed Mirage"> </div> 
-        </a> 
-        
-        <a href="pc gamer/crysisremaster.html" target="_blank"> <div class="caixa"> <div class="titulo">Crysis Remastered</div> <br> <img src="pc gamer/imagens/imagens dos jogos/crysis remaster.jpg" alt="Crysis Remastered"> </div> </a> 
-        
-        <a href="pc fraco/codwar4.html" target="_blank"> <div class="caixa"> <div class="titulo">Call of Duty - Modern Warfare 4</div> <br> <img src="pc fraco/imagens/imagens dos jogos/cod 4.jpg" alt="Call of Duty"> </div> </a> 
-        
-        <a href="pc fraco/fifa14.html" target="_blank"> <div class="caixa"> <div class="titulo">Fifa 2014 + Patch 2025</div> <br> <img src="pc fraco/imagens/imagens dos jogos/fifa 14.jpg" alt="fifa14"> </div> </a> <a href="https://1024terabox.com/s/1jAwOJYVkQKAsMXP_-X4acA" target="_blank"> <div class="caixa"> <div class="titulo">Android TV PC</div> <br> <img src="software/imagens/logo android tv/android tv.png" alt="Logo Android TV"> </div> </a> 
-        
-        <a href="https://1024terabox.com/s/1ccat0Cd2L9bwOeBYNcChVQ" target="_blank"> <div class="caixa"> <div class="titulo">Windows 11 Compativel com Todos os Pc's</div><br> <img src="software/imagens/logo windows/logo windows 11.png" alt="Logo Winodws 11"> </div> </a> </div> 
-        
-        <h4 class="pix">FAÇA UMA DOAÇÃO!</h4> 
-        <img src="imagens/qrcode-pix.png" alt="QR Code PIX" id="pix"><br> 
-        
-        <p> <a href="pix.html" class="pixm" target="_blank">Clique aqui para ajudar o Site</a></p> 
-        
-        <h4> ENTRE EM CONTATO COMIGO PARA TIRAR QUALQUER DUVIDA</h4> <hr> 
-        
-        <li><img src="imagens/icones redes sociais/icone-facebook.png" alt="Logo Facebook"> 
-        <a href="https://www.facebook.com/profile.php?id=61578393337522">Clique aqui</a> - E fale comigo pelo Facebook, seria um prazer lhe atender! </li> 
-        
-        <li><img src="imagens/icones redes sociais/icone-linkedin.png" alt="Logo Linkedin"> 
-        <a href="https://www.linkedin.com/in/pedro-henriquehtml" target="_blank">Clique aqui</a> - E acesse o meu Linkedin! </li> 
-        
-        <li><img src="imagens/icones redes sociais/icone-email.png" alt="Logo E-mail"> 
-        <a href="mailto:pedrinhohenrique.11.com@gmail.com" target="_blank">Clique aqui</a> - E me envie um E-mail! </li> <br> 
-    </main> 
+    <a href="pc fraco/codwar4.html" target="_blank">
+      <div class="caixa"><div class="titulo">Call of Duty - Modern Warfare 4</div><br><img src="pc fraco/imagens/imagens dos jogos/cod 4.jpg"></div>
+    </a> 
 
-  <footer> &copy; Site Desenvolvido por: <span>Pedro Henrique.</span> Todos os Direitos Reservados</footer>
+    <a href="pc fraco/fifa14.html" target="_blank">
+      <div class="caixa"><div class="titulo">Fifa 2014 + Patch 2025</div><br><img src="pc fraco/imagens/imagens dos jogos/fifa 14.jpg"></div>
+    </a> 
+  </div> 
+</main>
 
-    <!-- 🔥 FIREBASE SCRIPT -->
+<footer> &copy; Site Desenvolvido por: <span>Pedro Henrique.</span> Todos os Direitos Reservados</footer>
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-auth.js";
@@ -240,10 +218,8 @@ window.criarConta = function() {
   const senha = document.getElementById("senha").value;
 
   createUserWithEmailAndPassword(auth, email, senha)
-    .then(() => {
-      alert("Conta criada!");
-    })
-    .catch(error => {
+    .then(() => { alert("Conta criada!"); })
+    .catch(() => {
       document.getElementById("msg").innerText = "Digite o email e a senha depois clique em Criar conta";
     });
 }
@@ -258,5 +234,6 @@ window.loginGoogle = function() {
 window.abrirLogin = () => loginModal.style.display = "flex";
 window.fecharLogin = () => loginModal.style.display = "none";
 </script>
+
 </body>
 </html>
